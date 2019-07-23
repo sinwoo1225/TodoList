@@ -10,8 +10,8 @@ import java.sql.SQLException;
 public class DBUtil {
 	public static Connection getConnection() throws Exception{
 		String url = "jdbc:mysql://localhost:3306/sku?characterEncoding=utf8&serverTimezone=UTC";
-		String user = "root";
-		String password = "1234";
+		String user = "userID";
+		String password = "userPW";
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = 
 				DriverManager.getConnection(url, user, password);
